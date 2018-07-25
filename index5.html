@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<style>
+    .active {
+        background:red;
+    }
+</style>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <a href="hreflink" target="_blank">Click Me</a>
+        <a href="{{ hreflink}}" target="_blank">Click Me</a>
+        <a v-bind:href="hreflink" target="_blank">Click Me</a>
+
+        <span v-bind:class="{active:isactive}"><b>{{ title }}</b></span>
+    </div>
+</body>
+<script src="app6.js"></script>
+
+</html>
