@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click.prevent="buttonclickonce">Click Me</button>
+
+
+        Output : {{ clicknum }}
+
+
+        <br>
+        <input type="text" name="" id="" v-on:keyup.enter="showinputvalue" placeholder="enter your name">
+Output :  {{ name }}
+    </div>
+</body>
+<script src="app8.js"></script>
+</html>
