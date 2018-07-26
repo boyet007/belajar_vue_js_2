@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 2s
+        }
+
+        .fade-enter, .fade-leave-to{
+            opacity: 0
+        }
+    </style>
+</head>
+<body>
+    <div id="databinding">
+        <button v-on:click="show = !show">Cick Me</button>
+        <transition name = "fade">
+            <p v-show="show"  v-bind:style="styleobj">Animation Example</p>
+        </transition>
+    </div>        
+</body>
+<script src="app11.js"></script>
+
+</html>
